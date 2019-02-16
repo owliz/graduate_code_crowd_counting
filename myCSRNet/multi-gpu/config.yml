@@ -1,0 +1,14 @@
+# 1.data
+# 4
+batch_size: 4
+height: 224
+width: 224
+
+# 2. training
+# Adam, RMSProp
+optimizer: Adam
+lr: 1e-6
+epochs: 1000
+# 1 or 0
+quick_train: 0
+augment: 1
