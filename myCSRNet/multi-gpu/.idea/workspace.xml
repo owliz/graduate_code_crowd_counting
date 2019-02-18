@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/main.py" line="310" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1b868de-d790-4bf7-a3df-5927723a1b04" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,40 +52,83 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="277" column="58" lean-forward="true" selection-start-line="277" selection-start-column="58" selection-end-line="277" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="network.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/keras/engine/network.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19537">
+              <caret line="1612" column="6" selection-start-line="1612" selection-start-column="6" selection-end-line="1612" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sub_abnormal_events[0, j] - 1</find>
-      <find>test</find>
-      <find>dataset</find>
-      <find>regularity_score_dir</find>
-      <find>psnr_half_rec_l</find>
-      <find>confuse_scores</find>
-      <find>cfg.clip_length</find>
-      <find>use_rec_loss_in_test</find>
-      <find>for_pc</find>
-      <find>if adversarial:</find>
-      <find>if adversarial</find>
-      <find>elif GAN_type == 'WGAN-GP':</find>
-      <find>heatmap</find>
-      <find>if lam_two_stream != 0</find>
-      <find>variable_scope</find>
-      <find>adv</find>
-      <find>l_num</find>
-      <find>alpha_num</find>
-      <find>LRATE_G</find>
-      <find>LRATE_G_BOUNDARIES</find>
-      <find>g_step</find>
-      <find>step</find>
-      <find>opt</find>
-      <find>LRATE</find>
-      <find>g_optimizer</find>
-      <find>get_val_iterator</find>
-      <find>get_train_iterator</find>
-      <find>self.train_dataset</find>
-      <find>g_grads</find>
       <find>Model</find>
+      <find>dataset</find>
+      <find>train_dataset</find>
+      <find>block4_conv3</find>
+      <find>g_step</find>
+      <find>train_g_op</find>
+      <find>scope</find>
+      <find>model</find>
+      <find>epochs</find>
+      <find>lr</find>
+      <find>try</find>
+      <find>best_model_ckpt_dir</find>
+      <find>iterator</find>
+      <find>loss</find>
+      <find>variable_scope</find>
+      <find>eval()</find>
+      <find>data_iterator</find>
+      <find>:09f</find>
+      <find>:03f</find>
+      <find>Model diverged</find>
+      <find>diverged</find>
+      <find>int32</find>
+      <find>_batch_size</find>
+      <find>Saver</find>
+      <find>init_or_restore</find>
+      <find>var_list</find>
+      <find>with tf.variable_scope</find>
+      <find>saver</find>
+      <find>[!!!]An excep</find>
+      <find>logger</find>
     </findStrings>
     <replaceStrings>
       <replace>video_nums</replace>
@@ -97,6 +143,11 @@
       <replace>optimizer</replace>
       <replace>train_dataset</replace>
       <replace>grads</replace>
+      <replace>dataset</replace>
+      <replace>average_loss_v</replace>
+      <replace>train_op</replace>
+      <replace>loss</replace>
+      <replace>:04f</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -112,20 +163,20 @@
         <option value="$PROJECT_DIR$/train.py" />
         <option value="$PROJECT_DIR$/CLSTM_AEmodel.py" />
         <option value="$PROJECT_DIR$/test_util.py" />
-        <option value="$PROJECT_DIR$/loss_functions.py" />
-        <option value="$PROJECT_DIR$/config.yml" />
-        <option value="$PROJECT_DIR$/config_reader.py" />
-        <option value="$PROJECT_DIR$/dataset_util.py" />
         <option value="$PROJECT_DIR$/train_util.py" />
-        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/config_reader.py" />
+        <option value="$PROJECT_DIR$/loss_functions.py" />
+        <option value="$PROJECT_DIR$/dataset_util.py" />
+        <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/models.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="981" />
-    <option name="y" value="34" />
-    <option name="width" value="939" />
+    <option name="x" value="685" />
+    <option name="y" value="45" />
+    <option name="width" value="1222" />
     <option name="height" value="1046" />
   </component>
   <component name="ProjectView">
@@ -133,7 +184,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,10 +195,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../abnormal_detection/for_remote_code/my_model_14/multi-gpu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -236,7 +287,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="--dataset ped2 --phase test" />
+      <option name="PARAMETERS" value="--dataset part_A --phase train" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -299,44 +350,45 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="981" y="34" width="939" height="1046" extended-state="0" />
+    <frame x="685" y="45" width="1222" height="1046" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20742358" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15763135" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.23606889" side_tool="true" weight="0.35140997" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24186552" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24186552" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49949342" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7639311" weight="0.054229934" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7639311" weight="0.031453364" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20742358" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24186552" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20683904" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.24186552" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.7639311" weight="0.031453364" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49949342" weight="0.329718" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.23606889" side_tool="true" weight="0.35140997" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.329718" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.7639311" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49949342" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.23606889" side_tool="true" weight="0.35140997" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -380,6 +432,16 @@
           <line>43</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>360</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>349</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -391,19 +453,14 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="31" />
+      <option name="time" value="60" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.1/system/python_stubs/1493273326/builtins.py" />
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/contrib/rnn/python/ops/core_rnn_cell.py" />
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/util/lazy_loader.py" />
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/rnn_cell_impl.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/rnn.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/contrib/rnn/python/ops/rnn_cell.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/array_ops.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/framework/tensor_shape.py" />
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/data/ops/dataset_ops.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/lib/shape_base.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/core/fromnumeric.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/image_ops_impl.py" />
@@ -422,8 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/training/optimizer.py" />
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/training/saver.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/numpy/lib/arraysetops.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/sklearn/utils/validation.py" />
     <entry file="file://$PROJECT_DIR$/tvnet/__init__.py">
@@ -434,7 +489,6 @@
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/gen_array_ops.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/training/adam.py" />
     <entry file="file:///usr/lib/python3/dist-packages/apport_python_hook.py" />
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/framework/ops.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/util/deprecation.py" />
     <entry file="file:///usr/local/lib/python3.5/dist-packages/sklearn/metrics/ranking.py" />
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/math_ops.py" />
@@ -458,13 +512,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1198">
           <caret line="5008" column="20" selection-start-line="5008" selection-start-column="20" selection-end-line="5008" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/platform/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="124" selection-start-line="124" selection-end-line="124" />
         </state>
       </provider>
     </entry>
@@ -514,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/loss_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="44" column="52" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/training/gradient_descent.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -528,59 +568,127 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.yml">
+    <entry file="file://$PROJECT_DIR$/../../../abnormal_detection/for_remote_code/model_explain" />
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/training/optimizer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="158">
+          <caret line="510" selection-start-line="510" selection-end-line="510" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/ops/variables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="2500" column="4" selection-start-line="2500" selection-start-column="4" selection-end-line="2500" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/framework/ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="5913" column="29" selection-start-line="5913" selection-start-column="24" selection-end-line="5913" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/platform/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="124" selection-start-line="124" selection-end-line="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/keras/backend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="469" column="4" selection-start-line="469" selection-start-column="4" selection-end-line="469" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/client/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="1519" selection-start-line="1519" selection-end-line="1519" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config_reader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="255">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/loss_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="169" column="30" selection-start-line="169" selection-start-column="4" selection-end-line="169" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataset_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+        <state relative-caret-position="261">
+          <caret line="132" column="42" selection-start-line="132" selection-start-column="32" selection-end-line="132" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/data/ops/dataset_ops.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1989">
-          <caret line="128" column="68" selection-start-line="128" selection-start-column="40" selection-end-line="128" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="183">
+          <caret line="1954" selection-start-line="1954" selection-end-line="1954" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding>
-            <marker date="1550307104568" expanded="true" signature="1586:1594" ph="..." />
-          </folding>
+        <state relative-caret-position="314">
+          <caret line="1014" column="24" selection-start-line="1014" selection-start-column="17" selection-end-line="1014" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/train_util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="296">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="13" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../abnormal_detection/for_remote_code/model_explain">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tensorflow_py3.5/lib/python3.5/site-packages/tensorflow/python/keras/engine/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19537">
+          <caret line="1612" column="6" selection-start-line="1612" selection-start-column="6" selection-end-line="1612" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="277" column="58" lean-forward="true" selection-start-line="277" selection-start-column="58" selection-end-line="277" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

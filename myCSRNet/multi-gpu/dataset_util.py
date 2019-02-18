@@ -87,49 +87,52 @@ def _crop_random(image, mask):
     return image, mask
 
 
-def data_iterator(dataset, cfg, batch_size, tfrecord_root_dir, logger, num_threads=2, prefetch=30):
-        train_volume_num = 0
-        size = '{}_{}'.format(cfg.width, cfg.height)
-        dir_path = os.path.join(tfrecord_root_dir, dataset, size, dir_name)
+def data_iterator(dataset, phase, cfg, batch_size, tfrecord_root_dir, logger, num_threads=2,
+                  prefetch=30):
+        # train_volume_num = 0
+        dir_path = os.path.join(tfrecord_root_dir, dataset)
+        if phase == 'train':
+            file_dir = os.path.join(dir_path, 'train_data.tfrecords')
+        elif phase == 'test':
+            file_dir = os.path.join(dir_path, 'test_data.tfrecords')
+        
+        dataset = tf.data.TFRecordDataset(file_dir)
+        dataset = dataset.map(_parse_example)
 
-        train_file_dir = os.path.join(dir_path)
+        # if cfg.quick_train == 1:
+        #     """
+        #     for choose hyper-parameter quickly
+        #     """
+        #     percent = 0.2
+        #     small_train_num = int(train_volume_num * percent)
+        #     print('[!!!] {} of train set is used for quick training.'.format(small_train_num,
+        #                                                                     percent))
+        #     logger.info('[!!!] {} of train set is used for quick training.'.format(
+        #         small_train_num, percent))
+        #     dataset = dataset.take(small_train_num)
 
-        train_dataset = tf.data.TFRecordDataset(train_file_dir)
-        train_dataset = train_dataset.map(_parse_example)
-
-        if cfg.quick_train == 1:
-            """
-            for choose hyper-parameter quickly
-            """
-            percent = 0.2
-            small_train_num = int(train_volume_num * percent)
-            print('[!!!] {} of train set is used for quick training.'.format(small_train_num,
-                                                                            percent))
-            logger.info('[!!!] {} of train set is used for quick training.'.format(
-                small_train_num, percent))
-            train_dataset = train_dataset.take(small_train_num)
-
-        if cfg.augment == 1:
-            train_dataset = train_dataset.map(_corrupt_brightness,
+        if phase == 'train' and cfg.augment == 1:
+            dataset = dataset.map(_corrupt_brightness,
                                               num_parallel_calls=num_threads).prefetch(prefetch)
 
-            train_dataset = train_dataset.map(_corrupt_contrast,
+            dataset = dataset.map(_corrupt_contrast,
                                               num_parallel_calls=num_threads).prefetch(prefetch)
 
-            train_dataset = train_dataset.map(_corrupt_saturation,
+            dataset = dataset.map(_corrupt_saturation,
                                               num_parallel_calls=num_threads).prefetch(prefetch)
 
-            train_dataset = train_dataset.map(_crop_random,
+            dataset = dataset.map(_crop_random,
                                               num_parallel_calls=num_threads).prefetch(prefetch)
 
-            train_dataset = train_dataset.map(_flip_left_right,
+            dataset = dataset.map(_flip_left_right,
                                               num_parallel_calls=num_threads).prefetch(prefetch)
 
-        train_dataset = train_dataset.shuffle(buffer_size=prefetch)
+        if phase == 'train':
+            dataset = dataset.shuffle(buffer_size=prefetch)
         # drop reminder data with insufficient batch size
-        train_dataset = train_dataset.batch(batch_size, drop_remainder=True)
+        dataset = dataset.batch(batch_size, drop_remainder=True)
 
-        return train_dataset.make_initializable_iterator()
+        return dataset.make_initializable_iterator()
 
 
 

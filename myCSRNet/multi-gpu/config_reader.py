@@ -10,6 +10,7 @@ class Config(object):
         self.height = cfg['height']
         self.width = cfg['width']
         self.epochs = cfg['epochs']
+        self.patient = cfg['patient']
         self.opt = cfg['optimizer']
         self.lr = cfg['lr']
         self.quick_train = cfg['quick_train']
